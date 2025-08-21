@@ -1,4 +1,4 @@
-# ejercicio1
+# ejercicio 1
 print("Hola Mundo!")
 
 # ejercicio2
