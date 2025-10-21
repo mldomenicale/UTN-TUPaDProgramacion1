@@ -48,11 +48,10 @@ print("\nProductos agregados con éxito al archivo.")
 productos = []
 
 with open("productos.txt", "r") as archivo:
-    next(archivo)  # Salta el encabezado
+    next(archivo)
     for linea in archivo:
         partes = linea.strip().split(",")
         producto = {
-            # Primera letra de cada palabra en mayúscula
             "nombre": partes[0].title(),
             "precio": float(partes[1]),
             "cantidad": int(partes[2])
@@ -87,5 +86,3 @@ with open("productos.txt", "w") as archivo:
         archivo.write(linea)
 
 print("Archivo 'productos.txt' actualizado correctamente.")
-
-# FIN
