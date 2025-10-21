@@ -13,6 +13,7 @@ print("Archivo 'productos.txt' creado con éxito.")
 # EJERCICIO 2
 
 with open("productos.txt", "r") as archivo:
+    next(archivo)
     for linea in archivo:
         partes = linea.strip().split(",")
         nombre = partes[0].title()
@@ -86,3 +87,4 @@ with open("productos.txt", "w") as archivo:
         archivo.write(linea)
 
 print("Archivo 'productos.txt' actualizado correctamente.")
+# FIN
